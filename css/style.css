@@ -1,0 +1,48 @@
+body{
+    background-image: url(../img/fond.jpg);
+    background-repeat: no-repeat;
+}
+
+.bouton{
+    padding-left: 450px ;
+    padding-top: 80px;
+}
+
+.prix{
+    background-image: url(../img/123mieux.png);
+    background-repeat: no-repeat;
+    height:737px;
+}
+
+.red{
+    background-image: url(../img/partezrouge.png);
+    background-repeat: no-repeat;
+    height:737px;
+}
+
+.anim{
+    background-image: url(../img/animations.png);
+    background-repeat: no-repeat;
+    height:737px;
+}
+
+.rec{
+    background-image: url(../img/rectangle.png);
+    background-repeat: no-repeat;
+    height:737px;
+}
+
+.bat{
+    padding-top:33px;
+    margin:0;
+}
+.fb_iframe_widget iframe {
+    opacity: 0;
+}
+
+.fb_iframe_widget {
+    background-image: url(../img/jepart.png);
+    background-size: cover;
+
+}
+

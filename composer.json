@@ -1,0 +1,12 @@
+{
+    "name": "dev/braaxe_exo",
+    "authors": [
+        {
+            "name": "ThysBelynda",
+            "email": "belynda.thys@devinci.fr"
+        }
+    ],
+    "require": {
+        "facebook/graph-sdk" : "~5.0"
+    }
+}

@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c6a4e54-4916-44a0-9a9b-e0ec17d21ff6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/callback.php" afterPath="$PROJECT_DIR$/callback.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/config.php" afterPath="$PROJECT_DIR$/config/config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
     </list>
     <ignored path="braaxe_exo.iws" />
@@ -28,13 +27,24 @@
       <file leaf-file-name="home.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="912">
+              <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
               <folding>
-                <marker date="1481582232000" expanded="true" signature="525:552" ph="..." />
-                <marker date="1481582232000" expanded="true" signature="533:552" ph="..." />
-                <marker date="1481582232000" expanded="true" signature="679:702" ph="..." />
+                <marker date="1481585274000" expanded="true" signature="445:471" ph="..." />
+                <marker date="1481585274000" expanded="true" signature="452:471" ph="..." />
+                <marker date="1481585274000" expanded="true" signature="598:998" ph="..." />
+                <marker date="1481585274000" expanded="true" signature="598:5185" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/css/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="462">
+              <caret line="43" column="43" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -81,14 +91,14 @@
         <option value="$PROJECT_DIR$/views/index.php" />
         <option value="$PROJECT_DIR$/views/css/style.css" />
         <option value="$PROJECT_DIR$/style.css" />
-        <option value="$PROJECT_DIR$/css/style.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/jeu.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/callback.php" />
-        <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/config/config.php" />
+        <option value="$PROJECT_DIR$/css/style.css" />
+        <option value="$PROJECT_DIR$/home.php" />
       </list>
     </option>
   </component>
@@ -213,6 +223,20 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="braaxe_exo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="braaxe_exo" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -294,12 +318,12 @@
       <option name="presentableId" value="Default" />
       <updated>1481376546385</updated>
       <workItem from="1481376548004" duration="18671000" />
-      <workItem from="1481545122943" duration="6077000" />
+      <workItem from="1481545122943" duration="8706000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24748000" />
+    <option name="totallyTimeSpent" value="27377000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -338,13 +362,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/home.php</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
@@ -355,9 +372,10 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1481582232000" expanded="true" signature="525:552" ph="..." />
-            <marker date="1481582232000" expanded="true" signature="533:552" ph="..." />
-            <marker date="1481582232000" expanded="true" signature="679:702" ph="..." />
+            <marker date="1481585274000" expanded="true" signature="445:471" ph="..." />
+            <marker date="1481585274000" expanded="true" signature="452:471" ph="..." />
+            <marker date="1481585274000" expanded="true" signature="598:998" ph="..." />
+            <marker date="1481585274000" expanded="true" signature="598:5185" ph="..." />
           </folding>
         </state>
       </provider>
@@ -433,13 +451,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jeu.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -487,18 +498,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -511,14 +522,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="43" column="43" selection-start-line="43" selection-start-column="29" selection-end-line="43" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        <state relative-caret-position="912">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
           <folding>
-            <marker date="1481582232000" expanded="true" signature="525:552" ph="..." />
-            <marker date="1481582232000" expanded="true" signature="533:552" ph="..." />
-            <marker date="1481582232000" expanded="true" signature="679:702" ph="..." />
+            <marker date="1481585274000" expanded="true" signature="445:471" ph="..." />
+            <marker date="1481585274000" expanded="true" signature="452:471" ph="..." />
+            <marker date="1481585274000" expanded="true" signature="598:998" ph="..." />
+            <marker date="1481585274000" expanded="true" signature="598:5185" ph="..." />
           </folding>
         </state>
       </provider>

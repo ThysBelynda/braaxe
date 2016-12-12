@@ -13,18 +13,6 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
 
 echo '<a href="' . $loginUrl . '">Log in with Facebook!</a>';
 
-/*
-$helper = $fb->getRedirectLoginHelper();
-
-$permissions = ['email']; // PERMISSIONS YOU WOULD LIKE TO ACCESS
-$loginUrl = $helper->getLoginUrl(CALLBACK_URI, $permissions);
-
-//$loginUrl =  '<a href="' . htmlspecialchars($loginUrl) . '">Log in with Facebook!</a>';
-$loginUrl = htmlspecialchars($loginUrl);
-header("location: $loginUrl");
-exit();
-*/
-
 ?>
 
 

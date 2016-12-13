@@ -1,5 +1,5 @@
 <?php
-/*
+
 $host = "localhost";
 $dbName = "helloddk_test";
 $user = "root";
@@ -13,4 +13,4 @@ try {
 catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 }
-*/
+

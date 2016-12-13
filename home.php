@@ -1,6 +1,8 @@
 <?php
 require_once 'vendor/facebook/graph-sdk/src/Facebook/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
 
+//---------------------------------------FBD CODE---------------------------------------------------
 $fb = new Facebook\facebook([
 'app_id' => '584723665071337',
 'app_secret' => '148f7c2fa47fbacb8757ce2be0d1a030',
@@ -8,9 +10,8 @@ $fb = new Facebook\facebook([
 ]);
 
 $helper = $fb->getRedirectLoginHelper();
-$permissions = ['email', 'user_likes']; // optional
+$permissions = ['email']; // optional
 $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.php', $permissions);
-
 
 ?>
 
@@ -40,7 +41,7 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
 <script>
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : 'your-app-id',
+            appId      : '584723665071337',
             xfbml      : true,
             version    : 'v2.8'
         });
@@ -56,8 +57,10 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
     }(document, 'script', 'facebook-jssdk'));
 </script>
 
+
+<!------------------------------------------FB CODE JS---------------------------------------------->
 <script>
-    // This is called with the results from from FB.getLoginStatus().
+    // This is called with the results from FB.getLoginStatus().
     function statusChangeCallback(response) {
         console.log('statusChangeCallback');
         console.log(response);
@@ -91,7 +94,7 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
 
     window.fbAsyncInit = function() {
         FB.init({
-            appId      : '{your-app-id}',
+            appId      : '584723665071337',
             cookie     : true,  // enable cookies to allow the server to access
                                 // the session
             xfbml      : true,  // parse social plugins on this page
@@ -113,7 +116,6 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
         FB.getLoginStatus(function(response) {
             statusChangeCallback(response);
         });
-
     };
 
     // Load the SDK asynchronously
@@ -156,16 +158,13 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
                             <img src="img/batonnet2.png" height="400px" width=375px">
                         </div>
                             <div class="bouton">
-
                                 <?php echo '<a href="' . htmlspecialchars($loginUrl) . '"><img src="'.'img/jepart.png""></a>'; ?>
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
 <div id="status">
 
 </div>

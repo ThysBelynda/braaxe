@@ -1,20 +1,8 @@
 <?php
-require_once 'vendor/facebook/graph-sdk/src/Facebook/autoload.php';
-require_once __DIR__ . '/vendor/autoload.php';
-
-//---------------------------------------FBD CODE---------------------------------------------------
-$fb = new Facebook\facebook([
-'app_id' => '584723665071337',
-'app_secret' => '148f7c2fa47fbacb8757ce2be0d1a030',
-'default_graph_version' => 'v2.5',
-]);
-
-$helper = $fb->getRedirectLoginHelper();
-$permissions = ['email']; // optional
-$loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.php', $permissions);
-
+require_once '../vendor/facebook/graph-sdk/src/Facebook/autoload.php';
+require_once __DIR__ . '/../vendor/autoload.php';
+require ('../models/home.fn.php');
 ?>
-
 
 <!DOCTYPE html>
 
@@ -22,7 +10,7 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
 <head>
     <meta charset="utf-8">
     <title>Grand jeu concours</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
@@ -139,12 +127,6 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
     }
 </script>
 
-<!--
-  Below we include the Login Button social plugin. This button uses
-  the JavaScript SDK to present a graphical Login button that triggers
-  the FB.login() function when clicked.
--->
-
 <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false"></div>
 
 <div id="status">
@@ -155,10 +137,10 @@ $loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.
                 <div class="rec">
                     <div class="anim">
                         <div class="bat">
-                            <img src="img/batonnet2.png" height="400px" width=375px">
+                            <img src="../img/batonnet2.png" height="400px" width=375px">
                         </div>
                             <div class="bouton">
-                                <?php echo '<a href="' . htmlspecialchars($loginUrl) . '"><img src="'.'img/jepart.png""></a>'; ?>
+                                <?php echo '<a href="' . htmlspecialchars($loginUrl) . '"><img src="'.'../img/jepart.png""></a>'; ?>
                             </div>
                         </div>
                     </div>

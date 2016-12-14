@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - helloddk_test@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="helloddk_test">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="devschool"/>
+    <schema id="3" name="ds_biblio"/>
+    <schema id="4" name="facebook"/>
+    <schema id="5" name="information_schema"/>
+    <schema id="6" name="laravel-devschool"/>
+    <schema id="7" name="lrv_rendu"/>
+    <schema id="8" name="mysql"/>
+    <schema id="9" name="performance_schema"/>
+    <schema id="10" name="presta"/>
+    <schema id="11" name="symf_rendu"/>
+    <schema id="12" name="symf_td"/>
+    <schema id="13" name="twitter"/>
+    <schema id="14" name="twitter2"/>
+    <schema id="15" name="wp_rendu"/>
+    <table id="16" parent="1" name="users"/>
+    <column id="17" parent="16" name="nom">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="18" parent="16" name="prenom">
+      <mandatory>1</mandatory>
+      <data-type>varchar(100)|0</data-type>
+    </column>
+    <column id="19" parent="16" name="email">
+      <mandatory>1</mandatory>
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="20" parent="16" name="postal">
+      <mandatory>1</mandatory>
+      <data-type>int(5)|0</data-type>
+    </column>
+    <column id="21" parent="16" name="telephone">
+      <mandatory>1</mandatory>
+      <data-type>int(10)|0</data-type>
+    </column>
+    <column id="22" parent="16" name="score">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="23" parent="16" name="coups">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="24" parent="16" name="temps">
+      <mandatory>1</mandatory>
+      <data-type>time|0</data-type>
+    </column>
+    <column id="25" parent="16" name="facebook_user_id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+    </column>
+    <column id="26" parent="16" name="date_heure">
+      <mandatory>1</mandatory>
+      <data-type>timestamp|0</data-type>
+      <default-expression>CURRENT_TIMESTAMP</default-expression>
+    </column>
+    <column id="27" parent="16" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <key id="28" parent="16" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>

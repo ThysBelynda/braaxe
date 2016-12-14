@@ -1,7 +1,3 @@
-<?php
-require ('../form.controller.php');
-?>
-
 <!doctype html>
 
 <html lang="fr">
@@ -18,7 +14,7 @@ require ('../form.controller.php');
     <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 midway-horizontal midway-vertical fadeInDown animated">
         <div id="logbox">
             <h1>Connectez-vous !</h1>
-            <form method="POST" action="../jeu.php">
+            <form method="POST" action="../form.controller.php">
                 <div class="form-input">
 					<input type="text" name="nom" placeholder="Nom">
                 </div>

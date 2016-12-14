@@ -1,3 +1,4 @@
+/* ------------------------------------HOME-------------------------------------*/
 body{
     background-image: url(../img/fond.jpg);
     background-repeat: no-repeat;
@@ -36,6 +37,7 @@ body{
     padding-top:33px;
     margin:0;
 }
+
 .fb_iframe_widget iframe {
     opacity: 0;
 }
@@ -43,6 +45,20 @@ body{
 .fb_iframe_widget {
     background-image: url(../img/jepart.png);
     background-size: cover;
-
 }
+
+/* ------------------------------------JEU-------------------------------------*/
+.regle{
+    margin-top: 75px;
+}
+.carte{
+    margin-top: 40px;
+}
+
+/* ------------------------------------FINI-------------------------------------*/
+
+.message{
+    margin-top: 100px;
+}
+
 

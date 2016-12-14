@@ -1,5 +1,7 @@
 <?php
-
+if(!session_id()) {
+    session_start();
+}
 //---------------------------------------FBD CODE---------------------------------------------------
 $fb = new Facebook\facebook([
     'app_id' => '584723665071337',
@@ -9,4 +11,4 @@ $fb = new Facebook\facebook([
 
 $helper = $fb->getRedirectLoginHelper();
 $permissions = ['email']; // optional
-$loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/home.php/callback.php', $permissions);
+$loginUrl = $helper->getLoginUrl('http://localhost/braaxe_exo/callback.php', $permissions);

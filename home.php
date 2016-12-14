@@ -1,7 +1,7 @@
 <?php
-require_once '../vendor/facebook/graph-sdk/src/Facebook/autoload.php';
-require_once __DIR__ . '/../vendor/autoload.php';
-require ('../models/home.fn.php');
+require_once 'vendor/facebook/graph-sdk/src/Facebook/autoload.php';
+require_once __DIR__ . '/vendor/autoload.php';
+require ('models/home.fn.php');
 ?>
 
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ require ('../models/home.fn.php');
 <head>
     <meta charset="utf-8">
     <title>Grand jeu concours</title>
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
@@ -74,11 +74,6 @@ require ('../models/home.fn.php');
     // This function is called when someone finishes with the Login
     // Button.  See the onlogin handler attached to it in the sample
     // code below.
-    function checkLoginState() {
-        FB.getLoginStatus(function(response) {
-            statusChangeCallback(response);
-        });
-    }
 
     window.fbAsyncInit = function() {
         FB.init({
@@ -137,10 +132,10 @@ require ('../models/home.fn.php');
                 <div class="rec">
                     <div class="anim">
                         <div class="bat">
-                            <img src="../img/batonnet2.png" height="400px" width=375px">
+                            <img src="img/batonnet2.png" height="400px" width=375px">
                         </div>
                             <div class="bouton">
-                                <?php echo '<a href="' . htmlspecialchars($loginUrl) . '"><img src="'.'../img/jepart.png""></a>'; ?>
+                                <?php echo '<a href="' . htmlspecialchars($loginUrl) . '"><img src="'.'img/jepart.png""></a>'; ?>
                             </div>
                         </div>
                     </div>

@@ -34,52 +34,61 @@
     </div>
 </div>
 
-<div class="form" align="center">
+<form class="form-inline">
     <div class="col-lg-8">
         <form method="POST" action="../form.controller.php">
 
             <div class="row">
                 <div class="col-lg-offset-2 col-lg-4">
                     <div class="form-input">
-                        <input type="text" name="nom" placeholder="Nom">
+                        <label>Nom</label>
+                        <input type="text" name="nom" class="form-control" placeholder="Jane">
                     </div>
                 </div>
+
                 <div class="col-lg-4">
                     <div class="form-input">
-                        <input type="text" name="prenom" placeholder="Prénom">
+                        <div class="form-group">
+                            <label>Prénom</label>
+                            <input type="text" name="prenom" class="form-control" placeholder="Jane">
+                        </div>
                     </div>
                 </div>
             </div>
-
+        <br>
             <div class="row">
                 <div class="col-lg-offset-2 col-lg-4">
                     <div class="form-input">
-                        <input type="text" name="email" placeholder="E-mail">
+                        <label >E-mail</label>
+                        <input type="text" name="email" placeholder="E-mail" class="form-control">
                     </div>
                 </div>
                 <div class="col-lg-4">
                     <div class="form-input">
-                        <input type="text" name="postal" placeholder="Postal">
+                        <label>Code Postal</label>
+                        <input type="text" name="postal" placeholder="Postal" class="form-control">
                     </div>
                 </div>
             </div>
-
-
+        <br>
             <div class="row">
-                <div class="col-lg-offset-4 col-lg-4">
+                <div class="col-lg-offset-2 col-lg-6">
                     <div class="form-input">
-                        <input type="text" name="telephone" placeholder="Telephone">
+                        <label>Téléphone</label>
+                        <input type="text" name="telephone" placeholder="Telephone" class="form-control">
                     </div>
+                 </div>
+
+                <div class="col-lg-offset-5 col-lg-2">
                     <div class="form-submit">
-                        <input type="submit" value="Envoyer">
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
                     </div>
                 </div>
             </div>
 
         </form>
     </div>
-</div>
-
+</form>
 
 </body>
 </html>

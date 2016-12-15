@@ -9,7 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
 
     <script language="JavaScript">
-
+/*
         function nb_aleatoire(nb)
         {
             nombre= Math.floor(Math.random() * nb)+1;
@@ -54,7 +54,7 @@
             else nbtire=tirage[i];
             place[i]=nbtire;
         }
-
+*/
     </script>
 
 </head>
@@ -63,11 +63,11 @@
 
 
 <script language="JavaScript">
-    nombreCartes=12;
+    /*nombreCartes=12;
     cpt=0;
     nomImage="carte";
 
-    function retournerCarte([nbim] =0) {
+    function changeCard([nbim] =0) {
         if (nbim==nbim2) nbim=0;
         else{
             if (nbim==nbim3) nbim=0;
@@ -102,7 +102,7 @@
         document.write('<tr>');
         for (t=1 ;t<5 ; t++){
             cpt++;
-            document.write('<td><a href="#" onclick="retournerCarte('+(cpt)+')"><img src="../img/carte0.png" width="100" height="100" ></a></td>');
+            document.write('<td><img src="../img/carte0.png" width="100" height="100" onclick="this.src='../img/carte1.png'"></a></td>');
         }
         document.write('</tr>');
     }
@@ -114,13 +114,13 @@
         '<input name="result" type="text" id="result2" size="5">'+
         '</td><td width="100" align="center">'+
         /*'<input type="button" name="Submit" onClick="window.location=\'jeu.php\'" value="Rejouer">'+*/
-        '</td><td align="center">'+
+        /*'</td><td align="center">'+
         /*'<input type="button" name="Submit" onClick="window.location=\'../home.php\'" value="Quiter">'+*/
-        '</td></tr><tr>'+
+       /* '</td></tr><tr>'+
         /*'<td colspan="3">Le but du jeu est de retourner'+
         'les cartes 2 par 2, afin de trouver les cartes identiques</td>'+*/
-        '</tr></table></form>');
-
+       /* '</tr></table></form>');
+*/
 </script>
 
 <div class="regle">
@@ -135,54 +135,75 @@
 
 </div>
 
-<!--
+<script>
+
+    var nb = Math.floor(Math.random()*12)+1;
+    document.write(nb);
+
+    var image_tracker ='0';
+    function change(){
+        var image = document.getElementById(nb);
+
+        if (image_tracker=='0'){
+            image.src ='../img/carte1.png';
+            image_tracker = '1';
+        } else {
+            image.src ='../img/carte0.png';
+            image_tracker = '0';
+        }
+
+    }
+
+
+</script>
+
 <div class="carte">
     <div class="row">
         <div class="col-lg-offset-1 col-lg-5">
 
             <div class="row">
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px" id="carte1" onclick="changeImage()">
+                    <img id="1" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px" id="carte2">
+                    <img id="2" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="3" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
+                </div>
+                <div  class="col-lg-3">
+                    <img id="4" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="5" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="6" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="7" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="8" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="9" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="10" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="11" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
                 <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
-                </div>
-                <div class="col-lg-3">
-                    <img src="../img/carte0.png" height="140px" width="125px">
+                    <img id="12" onclick="change();" src="../img/carte0.png" height="140px" width="125px">
                 </div>
 
             </div>
         </div>
     </div>
 </div>
--->
+
 
 </body>
 </html>
